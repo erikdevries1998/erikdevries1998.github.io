@@ -4,3 +4,8 @@
     margin-right: auto;
     width: 50%;
 }
+
+.dropdown-menu{
+    max-height: 400px;
+    overflow-y: auto;
+}

@@ -8,9 +8,9 @@
     <body>
 
         <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-            <p class="h5 my-0 me-md-auto fw-normal">The Meetplant</p>
+            <p class="h2 my-0 me-md-auto fw-normal">The Meetplant</p>
             <nav class="my-2 my-md-0 me-md-3">
-                <a class="p-2 text-dark" href="#">Horeca</a>
+                <a class="p-2 text-dark" href="#">          Horeca</a>
                 <a class="p-2 text-dark" href="#">Vergaderruimtes</a>
                 <a class="p-2 text-dark" href="#">Toegangspasjes</a>
                 <a class="p-2 text-dark" href="#">Storing melden</a>
@@ -21,7 +21,7 @@
         <main class="container">
             <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                 <h1 class="display-4">Product Diensten Catalogus</h1>
-                <p class="lead">Hier alle dingetjes inzetten</p>
+                <p class="lead">Vergaderruimtes</p>
             </div>
 
 
@@ -29,89 +29,278 @@
                 <div class="col">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-header">
-                            <h4 class="my-0 fw-normal">Free</h4>
+                            <h4 class="my-0 fw-normal">Klein</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                            <h1 class="card-title pricing-card-title">$10 <small class="text-muted">/ pp</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>.</li>
-                                <li>.</li>
-                                <li>.</li>
-                                <li>Help center access</li>
+                                <li>Vergader ruimte</li>
+                                <li>Maximaal 5 personen</li>
+                                <li>Catering mogelijk</li>
+                                <li>Prijs exclusief catering</li>
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                            <button type="button" class="w-100 btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal">Ruimte boeken</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Kleine vergaderruimte boeken</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Formulier kleine vergaderruimte</p>
+                                            <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">Bedrijfsnaam</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                                                <label for="exampleFormControlTextarea1">Cateringverzoek</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            </div>
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+                                            <div class="btn-group timepickercontainer dropdown focus-active" id="atimepicker" data-value="11:45AM">
+                                                <p>Begintijd</p>
+
+                                                <button type="button" data-onClick="ScrollToActive(this);" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    11:45 <i class="caret"></i>
+                                                </button>
+                                                <!-- <ul class="dropdown-menu" onLoad="SetScrollValue(true);">-->
+                                                <ul class="dropdown-menu scrollable-menu" role="menu">
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="6:00">6:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="6:15">6:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="6:30">6:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="6:45">6:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="7:00">7:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="7:15">7:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="7:30">7:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="7:45">7:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="8:00">8:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="8:15">8:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="8:30">8:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="8:45">8:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="9:00">9:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="9:15">9:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="9:30">9:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="9:45">9:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="10:00">10:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="10:15">10:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="10:30">10:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="10:45">10:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="11:00">11:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="11:15">11:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="11:30">11:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="11:45">11:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="12:00">12:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="12:15">12:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="12:30">12:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="12:45">12:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="13:00">13:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="13:15">13:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="13:30">13:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="13:45">13:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="14:00">14:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="14:15">14:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="14:30">14:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="14:45">14:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="15:00">15:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="15:15">15:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="15:30">15:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="15:45">15:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="16:00">16:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="16:15">16:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="16:30">16:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="16:45">16:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="17:00">17:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="17:15">17:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="17:30">17:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="17:45">17:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="18:00">18:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="18:15">18:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="18:30">18:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="18:45">18:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="19:00">19:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="19:15">19:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="19:30">19:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="19:45">19:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="20:00">20:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="20:15">20:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="20:30">20:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="20:45">20:45</a></li>
+
+                                                </ul>
+                                                <script>$(".dropdown.focus-active").on("shown.bs.dropdown", function () { $(this).find(".dropdown-menu li.active a").focus(); });</script>
+                                            </div>
+                                            <div class="btn-group timepickercontainer dropdown focus-active" id="atimepicker" data-value="11:45AM">
+                                                <p>Eindtijd</p>
+
+                                                <button type="button" data-onClick="ScrollToActive(this);" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    11:45 <i class="caret"></i>
+                                                </button>
+                                                <ul class="dropdown-menu scrollable-menu" role="menu">
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="6:15">6:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="6:30">6:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="6:45">6:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="7:00">7:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="7:15">7:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="7:30">7:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="7:45">7:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="8:00">8:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="8:15">8:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="8:30">8:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="8:45">8:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="9:00">9:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="9:15">9:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="9:30">9:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="9:45">9:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="10:00">10:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="10:15">10:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="10:30">10:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="10:45">10:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="11:00">11:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="11:15">11:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="11:30">11:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="11:45">11:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="12:00">12:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="12:15">12:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="12:30">12:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="12:45">12:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="13:00">13:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="13:15">13:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="13:30">13:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="13:45">13:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="14:00">14:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="14:15">14:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="14:30">14:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="14:45">14:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="15:00">15:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="15:15">15:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="15:30">15:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="15:45">15:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="16:00">16:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="16:15">16:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="16:30">16:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="16:45">16:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="17:00">17:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="17:15">17:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="17:30">17:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="17:45">17:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="18:00">18:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="18:15">18:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="18:30">18:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="18:45">18:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="19:00">19:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="19:15">19:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="19:30">19:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="19:45">19:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="20:00">20:00</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="20:15">20:15</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="20:30">20:30</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="20:45">20:45</a></li>
+                                                    <li><a href="#" onclick="HandleTimeSelect(this);" data-value="21:00">21:00</a></li>
+
+                                                </ul>
+                                                <script>$(".dropdown.focus-active").on("shown.bs.dropdown", function () { $(this).find(".dropdown-menu li.active a").focus(); });</script>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-primary">Ruimte boeken</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Afsluiten</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-header">
-                            <h4 class="my-0 fw-normal">Pro</h4>
+                            <h4 class="my-0 fw-normal">gemiddeld</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                            <h1 class="card-title pricing-card-title">$7,5 <small class="text-muted">/ pp</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>.</li>
-                                <li>.</li>
-                                <li>.</li>
-                                <li>Help center access</li>
+                                <li>Vergader ruimte</li>
+                                <li>Maximaal 10 personen</li>
+                                <li>Catering mogelijk</li>
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                            <button type="button" class="w-100 btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal">Ruimte boeken</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Modal Header</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Some text in the modal.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-header">
-                            <h4 class="my-0 fw-normal">Enterprise</h4>
+                            <h4 class="my-0 fw-normal">Groot</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                            <h1 class="card-title pricing-card-title">$5 <small class="text-muted">/ pp</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>iets</li>
-                                <li>nog iets</li>
-                                <li>en iets</li>
-                                <li>Help center access</li>
+                                <li>Vergader ruimte</li>
+                                <li>Maximaal 25 personen</li>
+                                <li>Catering mogelijk</li>
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                            <button type="button" class="w-100 btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal">Ruimte boeken</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Modal Header</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Some text in the modal.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <footer class="pt-4 my-md-5 pt-md-5 border-top">
                 <div class="row">
-                    <div class="col-12 col-md">
-                        <img class="mb-2" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
-                        <small class="d-block mb-3 text-muted">© 2020-2021/small>
-                    </div>
                     <div class="col-6 col-md">
-                        <h5>Features</h5>
+                        <h5>Projectgroep 1e2-4</h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="link-secondary" href="#">Cool stuff</a></li>
-                            <li><a class="link-secondary" href="#">Random feature</a></li>
-                            <li><a class="link-secondary" href="#">Team feature</a></li>
-                            <li><a class="link-secondary" href="#">Stuff for developers</a></li>
-                            <li><a class="link-secondary" href="#">Another one</a></li>
-                            <li><a class="link-secondary" href="#">Last time</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md">
-                        <h5>Resources</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a class="link-secondary" href="#">Resource</a></li>
-                            <li><a class="link-secondary" href="#">Resource name</a></li>
-                            <li><a class="link-secondary" href="#">Another resource</a></li>
-                            <li><a class="link-secondary" href="#">Final resource</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md">
-                        <h5>About</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a class="link-secondary" href="#">Team</a></li>
-                            <li><a class="link-secondary" href="#">Locations</a></li>
-                            <li><a class="link-secondary" href="#">Privacy</a></li>
-                            <li><a class="link-secondary" href="#">Terms</a></li>
+                            <li><a class="link-secondary" href="#">Catharina Veldman</a></li>
+                            <li><a class="link-secondary" href="#">Britt Kok</a></li>
+                            <li><a class="link-secondary" href="#">Lisanne Jager</a></li>
+                            <li><a class="link-secondary" href="#">Erik de Vries</a></li>
                         </ul>
                     </div>
                 </div>
@@ -123,20 +312,30 @@
 
 
     </body>
-   
+
 
     </div><!-- /.container -->
     <!-- FOOTER -->
     <footer class="container">
         <p class="float-right"><a href="#">Back to top</a></p>
-        <p>© 2020-2021 The Meetplant, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p>© 2020-2021 The Meetplant, Inc.</p>
     </footer>
+
+
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <script src="../../assets/js/vendor/holder.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script>
         Holder.addTheme('thumb', {
             bg: '#55595c',
