@@ -757,9 +757,9 @@
                                         <div class="col-sm-12">
                                             <label for="exampleInputEmail1">Geboorte datum</label>
                                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="00/00/0000">
-                                            </div>
+                                        </div>
                                         <div class="modal-footer">
-                                            <button type="submit" class="btn btn-primary"data-toggle="modal" data-target="#myModal41">Pas aanvragen</button>
+                                            <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal41">Pas aanvragen</button>
 
                                             <div class="modal" id="myModal41" role="dialog">
                                                 <div class="modal-dialog">
@@ -781,9 +781,9 @@
 
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Afsluiten</button>
                                         </div>
-                                        </div>
-
                                     </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -815,19 +815,36 @@
                                     <!-- Modal 5  content-->
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h4 class="modal-title">normale vergaderruimte boeken</h4>
+                                            <h4 class="modal-title">Storing melden</h4>
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                                         </div>
                                         <div class="modal-body">
-                                            <p>Formulier normale vergaderruimte</p>
-                                            <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">Bedrijfsnaam</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                                <label for="exampleFormControlTextarea1">Cateringverzoek</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <div class="col-sm-6">
+                                                <label for="firstName" class="form-label">Voornaam</label>
+                                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+
                                             </div>
-                                            <label for="exampleInputEmail1">Email address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                            <div class="col-sm-6">
+                                                <label for="lastName" class="form-label">Achternaam</label>
+                                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+
+                                            </div>
+                                            <label for="exampleInputEmail1">Datum voorkoming storing</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="00/00/0000">
+
+                                            <label for="exampleFormControlTextarea1">Storing/probleem</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+
+                                            <div class="btn-group dropright">
+                                                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Urgentie
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Laag</a>
+                                                    <a class="dropdown-item" href="#">Gemiddeld</a>
+                                                    <a class="dropdown-item" href="#">Hoog</a>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal51">Storing melden</button>
@@ -875,7 +892,7 @@
                                         <ul class="list-unstyled mt-5 mb-7"></ul>
                                     </div>
                                 </div>
-                                <button type="button" class="w-100 btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal6">Huren</button>
+                                <button type="button" class="w-100 btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal6">Fietsen huren</button>
 
                             </div>
                             <!-- Modal 6 -->
@@ -886,19 +903,35 @@
                                     <!-- Modal 6  content-->
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h4 class="modal-title">Grote vergaderruimte boeken</h4>
+                                            <h4 class="modal-title">Fietsen huren</h4>
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                                         </div>
                                         <div class="modal-body">
-                                            <p>Formulier Grote vergaderruimte</p>
                                             <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">Bedrijfsnaam</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                                <label for="exampleFormControlTextarea1">Cateringverzoek</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                <div class="col-sm-6">
+                                                    <label for="firstName" class="form-label">Voornaam</label>
+                                                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="lastName" class="form-label">Achternaam</label>
+                                                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+
+
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <label for="exampleFormControlTextarea1">Aantal fietsen</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="1" rows="1"></textarea>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="exampleInputEmail1">Datum huren begin</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="00/00/0000">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="exampleInputEmail1">Datum huren eind</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="00/00/0000">
+                                                </div>
                                             </div>
-                                            <label for="exampleInputEmail1">Email address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                                         </div>
                                         <div class="modal-footer">
                                             <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal61">Fiets huren</button>
@@ -933,8 +966,8 @@
 
             </div>
 
-
-
+            <div class="pt-1 my-0 pt-md-0 border-top">
+            </div>
             <!-- services-->
             <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                 <h3 class="display-4">Services</h3>
@@ -945,8 +978,7 @@
                 <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 450px;">
                     <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
                         <div class="card">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-
+                            <img src="https://m.andalusiastarnews.com/wp-content/uploads/sites/13/2020/08/WiFi.jpg" class="img-rounded" alt="Cinque Terre" width="350" height="200">
                             <div class="card-body">
                                 <h4 class="card-title">WIFI</h4>
                                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -956,7 +988,7 @@
 
                     <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33%; top: 0px;">
                         <div class="card">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+                            <img src="https://m.andalusiastarnews.com/wp-content/uploads/sites/13/2020/08/WiFi.jpg" class="img-rounded" alt="Cinque Terre" width="350" height="200">
 
                             <div class="card-body">
                                 <h4 class="card-title">ICT</h4>
@@ -968,7 +1000,7 @@
 
                     <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66%; top: 0px;">
                         <div class="card">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+                            <img src="https://m.andalusiastarnews.com/wp-content/uploads/sites/13/2020/08/WiFi.jpg" class="img-rounded" alt="Cinque Terre" width="350" height="200">
 
                             <div class="card-body">
                                 <h4 class="card-title">Print- en reprofaciliteiten</h4>
@@ -991,7 +1023,7 @@
                 <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 450px;">
                     <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
                         <div class="card">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+                            <img src="https://m.andalusiastarnews.com/wp-content/uploads/sites/13/2020/08/WiFi.jpg" class="img-rounded" alt="Cinque Terre" width="350" height="200">
 
                             <div class="card-body">
                                 <h4 class="card-title">Parkeergelegenheid</h4>
@@ -1002,7 +1034,7 @@
 
                     <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33%; top: 0px;">
                         <div class="card">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+                            <img src="https://m.andalusiastarnews.com/wp-content/uploads/sites/13/2020/08/WiFi.jpg" class="img-rounded" alt="Cinque Terre" width="350" height="200">
 
                             <div class="card-body">
                                 <h4 class="card-title">Onderhoud</h4>
@@ -1014,7 +1046,7 @@
 
                     <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66%; top: 0px;">
                         <div class="card">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+                            <img src="https://m.andalusiastarnews.com/wp-content/uploads/sites/13/2020/08/WiFi.jpg" class="img-rounded" alt="Cinque Terre" width="350" height="200">
 
                             <div class="card-body">
                                 <h4 class="card-title">netwerkborrels </h4>
@@ -1079,24 +1111,18 @@
 
             <footer class="pt-1 my-0 pt-md-0 border-top">
                 <div class="row">
-                    <div class="col-12 col-md">
-                    </div>
-
-                    <div class="col-6 col-md">
-                        <h5>Team</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a class="link-secondary" href="#">Lisanne Jager</a></li>
-                            <li><a class="link-secondary" href="#">Britt Kok</a></li>
-                            <li><a class="link-secondary" href="#">Catharina Veldman</a></li>
-                            <li><a class="link-secondary" href="#">Erik de Vries</a></li>
-                        </ul>
-                    </div>  
+                    <h4 class="col-sm-3">Lisanne Jager</h4>
+                    <h4 class="col-sm-3">Britt Kok</h4>
+                    <h4 class="col-sm-3">Catharina Veldman</h4>
+                    <h4 class="col-sm-3">Erik de Vries</h4>
                 </div>
 
-                <p class="float-right">
-                    <a href="#">Back to top</a>
-                </p>
-                <p class="float-left">2020-2021 The Meetplant, Inc.</p>
+                <div>
+                    <p class="float-right">
+                        <a href="#">Back to top</a>
+                    </p>
+                    <p class="float-left">2020-2021 The Meetplant, Inc.</p>
+                </div>
             </footer>
 
         </main>
